@@ -1,0 +1,20 @@
+{
+  "name": "agentready-audit-worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Queue consumer that executes AgentReady audits serverlessly: Browser Run for the browser, Workers AI for the agent, D1 for results.",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dry-run": "wrangler deploy --dry-run --outdir dist",
+    "tail": "wrangler tail"
+  },
+  "dependencies": {
+    "@cloudflare/playwright": "^1.3.6"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260902.1",
+    "typescript": "^5",
+    "wrangler": "^4.128.0"
+  }
+}

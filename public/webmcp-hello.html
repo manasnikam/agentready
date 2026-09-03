@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AgentReady — WebMCP hello world</title>
+<style>
+  :root { --ink:#16262e; --paper:#f4f7f6; --ok:#1f7a5c; --bad:#b3402a; --line:#c9d4d1; }
+  body { margin:0; font:16px/1.5 "IBM Plex Sans", system-ui, sans-serif; background:var(--paper); color:var(--ink); }
+  main { max-width:640px; margin:8vh auto; padding:0 20px; }
+  h1 { font-size:1.4rem; font-weight:600; }
+  .status { border:1px solid var(--line); background:#fff; padding:14px 16px; border-radius:6px; margin:16px 0; }
+  .status strong.ok { color:var(--ok); } .status strong.bad { color:var(--bad); }
+  #log { font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:0.82rem; background:#fff;
+         border:1px solid var(--line); border-radius:6px; padding:12px 14px; min-height:120px; white-space:pre-wrap; }
+  .counter { font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:2.6rem; margin:8px 0; }
+  button { font:inherit; padding:8px 14px; border:1px solid var(--ink); background:#fff; border-radius:6px; cursor:pointer; }
+</style>
+</head>
+<body>
+<main>
+  <h1>AgentReady · WebMCP hello world</h1>
+  <p>This page registers two WebMCP tools. Open it in ChatGPT's in-app browser, or in Chrome with
+  <code>chrome://flags/#enable-webmcp-testing</code> enabled, then ask the agent to
+  <em>"increment the counter by 5"</em> or <em>"read the page status"</em>.</p>
+
+  <div class="status" id="apiStatus">Checking for WebMCP API…</div>
+  <div class="counter" id="counter">0</div>
+  <button id="incBtn">Increment by hand (+1)</button>
+  <p>Tool activity:</p>
+  <div id="log">— no tool calls yet —</div>
+</main>
+
+<script>
+(function () {
+  var count = 0;
+  var logEl = document.getElementById("log");
+  var counterEl = document.getElementById("counter");
+  var statusEl = document.getElementById("apiStatus");
+
+  function log(msg) {
+    var t = new Date().toISOString().slice(11, 19);
+    logEl.textContent = (logEl.textContent === "— no tool calls yet —" ? "" : logEl.textContent + "\n") + t + "  " + msg;
+  }
+  function render() { counterEl.textContent = String(count); }
+  document.getElementById("incBtn").addEventListener("click", function () { count += 1; render(); log("human clicked +1"); });
+
+  // The spec and Chrome docs expose the API on document.modelContext (some builds: navigator.modelContext).
+  var mc = (typeof document !== "undefined" && document.modelContext) ||
+           (typeof navigator !== "undefined" && navigator.modelContext) || null;
+
+  if (!mc || typeof mc.registerTool !== "function") {
+    statusEl.innerHTML = '<strong class="bad">WebMCP API not found.</strong> ' +
+      "If you are in Chrome, enable chrome://flags/#enable-webmcp-testing and restart. " +
+      "In ChatGPT, use the in-app browser.";
+    return;
+  }
+  statusEl.innerHTML = '<strong class="ok">WebMCP API detected.</strong> Two tools registered: ' +
+    "<code>increment_counter</code>, <code>get_page_state</code>.";
+
+  Promise.resolve(mc.registerTool({
+    name: "increment_counter",
+    description: "Increment the on-page counter by a given amount and return the new value.",
+    inputSchema: {
+      type: "object",
+      properties: { amount: { type: "number", description: "How much to add (default 1)" } }
+    },
+    execute: async function (input) {
+      var amount = (input && typeof input.amount === "number") ? input.amount : 1;
+      count += amount;
+      render();
+      log("agent called increment_counter(amount=" + amount + ") → " + count);
+      return { count: count };
+    }
+  })).then(function(){ log("registered increment_counter"); })
+    .catch(function(e){ log("register failed: " + e.message); });
+
+  Promise.resolve(mc.registerTool({
+    name: "get_page_state",
+    description: "Read the current counter value and page status.",
+    inputSchema: { type: "object", properties: {} },
+    execute: async function () {
+      log("agent called get_page_state → " + count);
+      return { count: count, page: "AgentReady hello world", api: "webmcp" };
+    }
+  })).then(function(){ log("registered get_page_state"); })
+    .catch(function(e){ log("register failed: " + e.message); });
+})();
+</script>
+</body>
+</html>

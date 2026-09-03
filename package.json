@@ -1,0 +1,34 @@
+{
+  "name": "agentready",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AgentReady — the readiness benchmark and live analytics for the agent-native web (WebMCP).",
+  "scripts": {
+    "dev": "vinext dev",
+    "build": "vinext build",
+    "preview": "vinext build && wrangler dev --config dist/client/wrangler.json",
+    "deploy": "vinext build && vinext-cloudflare deploy --config dist/client/wrangler.json",
+    "db:init": "wrangler d1 execute agentready-telemetry --remote --file=./schema.sql",
+    "db:init:local": "wrangler d1 execute agentready-telemetry --local --file=../../schema.sql --config dist/client/wrangler.json",
+    "import-results": "node scripts/import-results.mjs"
+  },
+  "dependencies": {
+    "@vinext/cloudflare": "^1.0.0-beta.7",
+    "next": "^15.5.24",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-server-dom-webpack": "^19.2.8",
+    "vinext": "^1.0.0-beta.9",
+    "wrangler": "^4.128.0"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.54.3",
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@vitejs/plugin-react": "^6.1.1",
+    "@vitejs/plugin-rsc": "^0.5.34",
+    "typescript": "^5",
+    "vite": "^8.2.2"
+  },
+  "type": "module"
+}

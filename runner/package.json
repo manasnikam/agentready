@@ -1,0 +1,9 @@
+{
+  "name": "agentready-runner",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Audit runner: agent task runs against target sites in UI mode and WebMCP mode, on Cloudflare Browser Run (default) or local Chromium (optional: npm i -D playwright && npx playwright install chromium).",
+  "scripts": { "audit": "node run.mjs" },
+  "dependencies": { "playwright-core": "^1.49.0" }
+}

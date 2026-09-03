@@ -1,0 +1,59 @@
+import { NextRequest, NextResponse } from "next/server";
+import { getCfEnv } from "@/lib/cf";
+
+export const dynamic = "force-dynamic";
+
+interface QueueLike { send: (body: unknown) => Promise<void>; }
+interface D1Like {
+  prepare: (sql: string) => {
+    bind: (...args: unknown[]) => { all: <T>() => Promise<{ results: T[] }> };
+  };
+}
+interface Bindings { AUDIT_QUEUE?: QueueLike; DB?: D1Like; }
+
+/** POST — enqueue an audit job for serverless execution by the audit worker. */
+export async function POST(req: NextRequest) {
+  const env = await getCfEnv<Bindings>();
+  if (!env?.AUDIT_QUEUE) {
+    return NextResponse.json(
+      { error: "Audit queue not available in this environment. On Cloudflare, create the queue (wrangler queues create agentready-audits) and deploy the audit worker." },
+      { status: 503 }
+    );
+  }
+  let body: any;
+  try { body = await req.json(); } catch {
+    return NextResponse.json({ error: "invalid JSON" }, { status: 400 });
+  }
+  const url = String(body?.url ?? "");
+  if (!/^https?:\/\//.test(url) && !url.startsWith("/")) {
+    return NextResponse.json({ error: "url must be absolute (or a path on this deployment)" }, { status: 400 });
+  }
+  const mode = body?.mode === "ui" ? "ui" : "webmcp";
+  const job = {
+    jobId: crypto.randomUUID().slice(0, 12),
+    slug: String(body?.slug ?? "adhoc").slice(0, 64).replace(/[^a-z0-9-]/gi, "-").toLowerCase(),
+    name: String(body?.name ?? body?.slug ?? "Ad-hoc audit").slice(0, 120),
+    url: url.startsWith("/") ? new URL(url, req.nextUrl.origin).toString() : url,
+    task: "find_and_cart_product",
+    mode,
+    runs: Math.min(Math.max(Number(body?.runs) || 1, 1), 5),
+  };
+  await env.AUDIT_QUEUE.send(job);
+  return NextResponse.json({ ok: true, queued: job });
+}
+
+/** GET ?slug= — read serverless audit results written by the audit worker. */
+export async function GET(req: NextRequest) {
+  const env = await getCfEnv<Bindings>();
+  if (!env?.DB) return NextResponse.json({ runs: [], note: "no D1 binding in this environment" });
+  const slug = req.nextUrl.searchParams.get("slug");
+  try {
+    const stmt = slug
+      ? env.DB.prepare("SELECT * FROM audit_runs WHERE slug = ? ORDER BY ts DESC LIMIT 50").bind(slug)
+      : env.DB.prepare("SELECT * FROM audit_runs ORDER BY ts DESC LIMIT 50").bind();
+    const { results } = await stmt.all<Record<string, unknown>>();
+    return NextResponse.json({ runs: results });
+  } catch {
+    return NextResponse.json({ runs: [], note: "no audit_runs yet — queue one first" });
+  }
+}

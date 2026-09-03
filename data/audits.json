@@ -1,0 +1,1054 @@
+[
+  {
+    "slug": "agentready-outfitters",
+    "name": "AgentReady Outfitters (live demo store)",
+    "url": "/store",
+    "category": "demo",
+    "synthetic": false,
+    "hasWebMCP": true,
+    "runs": [
+      {
+        "runId": "ui-0-40md",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 13,
+        "durationMs": 107940,
+        "failureCategory": "ambiguous_ui",
+        "timestamp": "2026-09-02T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-1-1sl",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 14,
+        "durationMs": 44800,
+        "timestamp": "2026-09-01T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-2-hy9l",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 16,
+        "durationMs": 135200,
+        "failureCategory": "auth_wall",
+        "timestamp": "2026-09-01T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-3-g77u",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 18,
+        "durationMs": 128629,
+        "failureCategory": "missing_info",
+        "timestamp": "2026-08-28T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-4-hn4h",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 16,
+        "durationMs": 101002,
+        "failureCategory": "ambiguous_ui",
+        "timestamp": "2026-09-02T15:55:07.184Z"
+      },
+      {
+        "runId": "webmcp-0-3pvi",
+        "mode": "webmcp",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 6,
+        "durationMs": 19200,
+        "timestamp": "2026-08-30T15:55:07.184Z"
+      },
+      {
+        "runId": "webmcp-1-494i",
+        "mode": "webmcp",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 3,
+        "durationMs": 9600,
+        "timestamp": "2026-08-29T15:55:07.184Z"
+      },
+      {
+        "runId": "webmcp-2-f4ib",
+        "mode": "webmcp",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 5,
+        "durationMs": 16000,
+        "timestamp": "2026-09-02T15:55:07.184Z"
+      },
+      {
+        "runId": "webmcp-3-jf9b",
+        "mode": "webmcp",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 2,
+        "durationMs": 6400,
+        "timestamp": "2026-08-29T15:55:07.184Z"
+      },
+      {
+        "runId": "webmcp-4-im2i",
+        "mode": "webmcp",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 6,
+        "durationMs": 19200,
+        "timestamp": "2026-08-30T15:55:07.184Z"
+      }
+    ]
+  },
+  {
+    "slug": "northline-electronics",
+    "name": "Northline Electronics",
+    "url": "https://northline-electronics.example",
+    "category": "electronics",
+    "synthetic": true,
+    "hasWebMCP": false,
+    "runs": [
+      {
+        "runId": "ui-0-jlyz",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 20,
+        "durationMs": 135185,
+        "failureCategory": "timeout",
+        "timestamp": "2026-08-30T15:55:07.183Z"
+      },
+      {
+        "runId": "ui-1-4umj",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 11,
+        "durationMs": 35200,
+        "timestamp": "2026-09-01T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-2-ee1h",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 18,
+        "durationMs": 105380,
+        "failureCategory": "popup_interference",
+        "timestamp": "2026-08-28T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-3-9o5o",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 18,
+        "durationMs": 140495,
+        "failureCategory": "popup_interference",
+        "timestamp": "2026-08-29T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-4-2grm",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 19,
+        "durationMs": 128973,
+        "failureCategory": "popup_interference",
+        "timestamp": "2026-09-01T15:55:07.184Z"
+      }
+    ]
+  },
+  {
+    "slug": "cartwheel-grocery",
+    "name": "Cartwheel Grocery",
+    "url": "https://cartwheel-grocery.example",
+    "category": "grocery",
+    "synthetic": true,
+    "hasWebMCP": false,
+    "runs": [
+      {
+        "runId": "ui-0-5tee",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 18,
+        "durationMs": 90165,
+        "failureCategory": "timeout",
+        "timestamp": "2026-08-30T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-1-iank",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 20,
+        "durationMs": 103800,
+        "failureCategory": "auth_wall",
+        "timestamp": "2026-08-31T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-2-i54p",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 12,
+        "durationMs": 91056,
+        "failureCategory": "missing_info",
+        "timestamp": "2026-09-02T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-3-55w0",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 15,
+        "durationMs": 48000,
+        "timestamp": "2026-09-01T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-4-cj4s",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 19,
+        "durationMs": 126474,
+        "failureCategory": "timeout",
+        "timestamp": "2026-09-02T15:55:07.184Z"
+      }
+    ]
+  },
+  {
+    "slug": "fernway-travel",
+    "name": "Fernway Travel",
+    "url": "https://fernway-travel.example",
+    "category": "travel",
+    "synthetic": true,
+    "hasWebMCP": false,
+    "runs": [
+      {
+        "runId": "ui-0-jai1",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 22,
+        "durationMs": 104349,
+        "failureCategory": "auth_wall",
+        "timestamp": "2026-09-01T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-1-k0p",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 15,
+        "durationMs": 111341,
+        "failureCategory": "missing_info",
+        "timestamp": "2026-08-28T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-2-7lv9",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 21,
+        "durationMs": 114939,
+        "failureCategory": "popup_interference",
+        "timestamp": "2026-08-29T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-3-3nwa",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 24,
+        "durationMs": 121791,
+        "failureCategory": "auth_wall",
+        "timestamp": "2026-08-30T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-4-50w5",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 17,
+        "durationMs": 109758,
+        "failureCategory": "missing_info",
+        "timestamp": "2026-09-01T15:55:07.184Z"
+      }
+    ]
+  },
+  {
+    "slug": "stitchport",
+    "name": "Stitchport Apparel",
+    "url": "https://stitchport.example",
+    "category": "fashion",
+    "synthetic": true,
+    "hasWebMCP": false,
+    "runs": [
+      {
+        "runId": "ui-0-crp9",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 13,
+        "durationMs": 147201,
+        "failureCategory": "timeout",
+        "timestamp": "2026-08-30T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-1-htgi",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 8,
+        "durationMs": 25600,
+        "timestamp": "2026-08-29T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-2-dsji",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 12,
+        "durationMs": 38400,
+        "timestamp": "2026-08-28T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-3-9spa",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 8,
+        "durationMs": 25600,
+        "timestamp": "2026-09-02T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-4-f6c2",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 13,
+        "durationMs": 94067,
+        "failureCategory": "popup_interference",
+        "timestamp": "2026-08-30T15:55:07.184Z"
+      }
+    ]
+  },
+  {
+    "slug": "kiln-and-oak",
+    "name": "Kiln & Oak Home",
+    "url": "https://kiln-and-oak.example",
+    "category": "home-goods",
+    "synthetic": true,
+    "hasWebMCP": true,
+    "runs": [
+      {
+        "runId": "ui-0-mt8",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 14,
+        "durationMs": 44800,
+        "timestamp": "2026-08-28T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-1-db9e",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 16,
+        "durationMs": 117640,
+        "failureCategory": "missing_info",
+        "timestamp": "2026-09-01T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-2-73z0",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 9,
+        "durationMs": 28800,
+        "timestamp": "2026-08-28T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-3-f1on",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 11,
+        "durationMs": 132440,
+        "failureCategory": "captcha",
+        "timestamp": "2026-09-01T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-4-gg7g",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 11,
+        "durationMs": 35200,
+        "timestamp": "2026-08-30T15:55:07.184Z"
+      },
+      {
+        "runId": "webmcp-0-k4t4",
+        "mode": "webmcp",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 6,
+        "durationMs": 19200,
+        "timestamp": "2026-09-01T15:55:07.184Z"
+      },
+      {
+        "runId": "webmcp-1-3vae",
+        "mode": "webmcp",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 2,
+        "durationMs": 6400,
+        "timestamp": "2026-08-31T15:55:07.184Z"
+      },
+      {
+        "runId": "webmcp-2-5m24",
+        "mode": "webmcp",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 6,
+        "durationMs": 19200,
+        "timestamp": "2026-09-02T15:55:07.184Z"
+      },
+      {
+        "runId": "webmcp-3-y7s",
+        "mode": "webmcp",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 3,
+        "durationMs": 9600,
+        "timestamp": "2026-08-29T15:55:07.184Z"
+      },
+      {
+        "runId": "webmcp-4-1jcs",
+        "mode": "webmcp",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 6,
+        "durationMs": 19200,
+        "timestamp": "2026-08-29T15:55:07.184Z"
+      }
+    ]
+  },
+  {
+    "slug": "brightfare-pharmacy",
+    "name": "Brightfare Pharmacy",
+    "url": "https://brightfare-pharmacy.example",
+    "category": "pharmacy",
+    "synthetic": true,
+    "hasWebMCP": false,
+    "runs": [
+      {
+        "runId": "ui-0-6thz",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 17,
+        "durationMs": 54400,
+        "timestamp": "2026-08-31T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-1-eugr",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 21,
+        "durationMs": 130263,
+        "failureCategory": "navigation_loop",
+        "timestamp": "2026-09-01T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-2-jlv6",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 20,
+        "durationMs": 93256,
+        "failureCategory": "popup_interference",
+        "timestamp": "2026-08-28T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-3-j89r",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 22,
+        "durationMs": 140075,
+        "failureCategory": "captcha",
+        "timestamp": "2026-09-02T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-4-sa8",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 18,
+        "durationMs": 130695,
+        "failureCategory": "timeout",
+        "timestamp": "2026-08-28T15:55:07.184Z"
+      }
+    ]
+  },
+  {
+    "slug": "loopset-fitness",
+    "name": "Loopset Fitness",
+    "url": "https://loopset-fitness.example",
+    "category": "fitness",
+    "synthetic": true,
+    "hasWebMCP": false,
+    "runs": [
+      {
+        "runId": "ui-0-iil",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 17,
+        "durationMs": 123909,
+        "failureCategory": "navigation_loop",
+        "timestamp": "2026-09-02T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-1-3zb5",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 6,
+        "durationMs": 19200,
+        "timestamp": "2026-08-29T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-2-epvn",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 7,
+        "durationMs": 22400,
+        "timestamp": "2026-09-02T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-3-34fg",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 6,
+        "durationMs": 19200,
+        "timestamp": "2026-08-28T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-4-85ko",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 13,
+        "durationMs": 112870,
+        "failureCategory": "timeout",
+        "timestamp": "2026-08-29T15:55:07.184Z"
+      }
+    ]
+  },
+  {
+    "slug": "harbor-and-page",
+    "name": "Harbor & Page Books",
+    "url": "https://harbor-and-page.example",
+    "category": "books",
+    "synthetic": true,
+    "hasWebMCP": true,
+    "runs": [
+      {
+        "runId": "ui-0-3v7",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 7,
+        "durationMs": 92210,
+        "failureCategory": "navigation_loop",
+        "timestamp": "2026-08-30T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-1-erdc",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 9,
+        "durationMs": 28800,
+        "timestamp": "2026-08-31T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-2-8zy0",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 7,
+        "durationMs": 22400,
+        "timestamp": "2026-08-29T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-3-i9q6",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 9,
+        "durationMs": 28800,
+        "timestamp": "2026-08-31T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-4-ezdj",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 7,
+        "durationMs": 148360,
+        "failureCategory": "missing_info",
+        "timestamp": "2026-08-29T15:55:07.184Z"
+      },
+      {
+        "runId": "webmcp-0-f3x6",
+        "mode": "webmcp",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 4,
+        "durationMs": 12800,
+        "timestamp": "2026-08-28T15:55:07.184Z"
+      },
+      {
+        "runId": "webmcp-1-bept",
+        "mode": "webmcp",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 2,
+        "durationMs": 6400,
+        "timestamp": "2026-09-01T15:55:07.184Z"
+      },
+      {
+        "runId": "webmcp-2-dbyg",
+        "mode": "webmcp",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 2,
+        "durationMs": 6400,
+        "timestamp": "2026-09-01T15:55:07.184Z"
+      },
+      {
+        "runId": "webmcp-3-93jt",
+        "mode": "webmcp",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 4,
+        "durationMs": 12800,
+        "timestamp": "2026-09-01T15:55:07.184Z"
+      },
+      {
+        "runId": "webmcp-4-2a73",
+        "mode": "webmcp",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 4,
+        "durationMs": 12800,
+        "timestamp": "2026-08-30T15:55:07.184Z"
+      }
+    ]
+  },
+  {
+    "slug": "veltro-motors-parts",
+    "name": "Veltro Motor Parts",
+    "url": "https://veltro-motors-parts.example",
+    "category": "auto-parts",
+    "synthetic": true,
+    "hasWebMCP": false,
+    "runs": [
+      {
+        "runId": "ui-0-12r3",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 25,
+        "durationMs": 141921,
+        "failureCategory": "auth_wall",
+        "timestamp": "2026-08-30T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-1-je6n",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 21,
+        "durationMs": 148478,
+        "failureCategory": "ambiguous_ui",
+        "timestamp": "2026-08-30T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-2-hnrt",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 25,
+        "durationMs": 93648,
+        "failureCategory": "timeout",
+        "timestamp": "2026-08-28T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-3-dk84",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 16,
+        "durationMs": 51200,
+        "timestamp": "2026-09-02T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-4-e6iq",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 21,
+        "durationMs": 130433,
+        "failureCategory": "missing_info",
+        "timestamp": "2026-09-01T15:55:07.184Z"
+      }
+    ]
+  },
+  {
+    "slug": "plumecraft",
+    "name": "Plumecraft Stationery",
+    "url": "https://plumecraft.example",
+    "category": "stationery",
+    "synthetic": true,
+    "hasWebMCP": false,
+    "runs": [
+      {
+        "runId": "ui-0-cjad",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 9,
+        "durationMs": 28800,
+        "timestamp": "2026-08-30T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-1-jjhs",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 17,
+        "durationMs": 98316,
+        "failureCategory": "captcha",
+        "timestamp": "2026-09-01T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-2-ibwu",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 9,
+        "durationMs": 105088,
+        "failureCategory": "popup_interference",
+        "timestamp": "2026-09-01T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-3-6zip",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 11,
+        "durationMs": 35200,
+        "timestamp": "2026-08-31T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-4-6m10",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 7,
+        "durationMs": 22400,
+        "timestamp": "2026-09-02T15:55:07.184Z"
+      }
+    ]
+  },
+  {
+    "slug": "saffron-basket",
+    "name": "Saffron Basket Foods",
+    "url": "https://saffron-basket.example",
+    "category": "grocery",
+    "synthetic": true,
+    "hasWebMCP": false,
+    "runs": [
+      {
+        "runId": "ui-0-fnc6",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 18,
+        "durationMs": 144218,
+        "failureCategory": "ambiguous_ui",
+        "timestamp": "2026-09-01T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-1-i3xc",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 11,
+        "durationMs": 35200,
+        "timestamp": "2026-09-01T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-2-5g7r",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 16,
+        "durationMs": 51200,
+        "timestamp": "2026-08-31T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-3-7t6e",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 19,
+        "durationMs": 147128,
+        "failureCategory": "ambiguous_ui",
+        "timestamp": "2026-08-29T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-4-cc53",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 15,
+        "durationMs": 48000,
+        "timestamp": "2026-09-02T15:55:07.184Z"
+      }
+    ]
+  },
+  {
+    "slug": "gridlamp",
+    "name": "Gridlamp Lighting",
+    "url": "https://gridlamp.example",
+    "category": "home-goods",
+    "synthetic": true,
+    "hasWebMCP": false,
+    "runs": [
+      {
+        "runId": "ui-0-3vbr",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 16,
+        "durationMs": 142643,
+        "failureCategory": "popup_interference",
+        "timestamp": "2026-08-28T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-1-cw31",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 12,
+        "durationMs": 38400,
+        "timestamp": "2026-08-31T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-2-2qse",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 11,
+        "durationMs": 35200,
+        "timestamp": "2026-08-28T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-3-ceus",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 11,
+        "durationMs": 101673,
+        "failureCategory": "auth_wall",
+        "timestamp": "2026-08-31T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-4-ign5",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 18,
+        "durationMs": 144776,
+        "failureCategory": "captcha",
+        "timestamp": "2026-08-31T15:55:07.184Z"
+      }
+    ]
+  },
+  {
+    "slug": "tidepool-toys",
+    "name": "Tidepool Toys",
+    "url": "https://tidepool-toys.example",
+    "category": "toys",
+    "synthetic": true,
+    "hasWebMCP": true,
+    "runs": [
+      {
+        "runId": "ui-0-118h",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 13,
+        "durationMs": 109327,
+        "failureCategory": "navigation_loop",
+        "timestamp": "2026-09-02T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-1-ifjm",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 19,
+        "durationMs": 137391,
+        "failureCategory": "captcha",
+        "timestamp": "2026-09-02T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-2-grqy",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 15,
+        "durationMs": 48000,
+        "timestamp": "2026-09-01T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-3-9szr",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 15,
+        "durationMs": 90607,
+        "failureCategory": "timeout",
+        "timestamp": "2026-08-29T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-4-gduh",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 13,
+        "durationMs": 41600,
+        "timestamp": "2026-08-28T15:55:07.184Z"
+      },
+      {
+        "runId": "webmcp-0-c9z7",
+        "mode": "webmcp",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 3,
+        "durationMs": 9600,
+        "timestamp": "2026-08-28T15:55:07.184Z"
+      },
+      {
+        "runId": "webmcp-1-jq8r",
+        "mode": "webmcp",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 2,
+        "durationMs": 6400,
+        "timestamp": "2026-08-28T15:55:07.184Z"
+      },
+      {
+        "runId": "webmcp-2-20lo",
+        "mode": "webmcp",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 5,
+        "durationMs": 16000,
+        "timestamp": "2026-08-31T15:55:07.184Z"
+      },
+      {
+        "runId": "webmcp-3-jwdo",
+        "mode": "webmcp",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 6,
+        "durationMs": 19200,
+        "timestamp": "2026-08-28T15:55:07.184Z"
+      },
+      {
+        "runId": "webmcp-4-5a8j",
+        "mode": "webmcp",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 3,
+        "durationMs": 9600,
+        "timestamp": "2026-08-31T15:55:07.184Z"
+      }
+    ]
+  },
+  {
+    "slug": "monsoon-threads",
+    "name": "Monsoon Threads",
+    "url": "https://monsoon-threads.example",
+    "category": "fashion",
+    "synthetic": true,
+    "hasWebMCP": false,
+    "runs": [
+      {
+        "runId": "ui-0-fm1n",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": true,
+        "steps": 15,
+        "durationMs": 48000,
+        "timestamp": "2026-08-28T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-1-jbff",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 17,
+        "durationMs": 109183,
+        "failureCategory": "captcha",
+        "timestamp": "2026-08-28T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-2-au1i",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 15,
+        "durationMs": 100012,
+        "failureCategory": "captcha",
+        "timestamp": "2026-09-01T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-3-k2ca",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 21,
+        "durationMs": 131708,
+        "failureCategory": "timeout",
+        "timestamp": "2026-08-31T15:55:07.184Z"
+      },
+      {
+        "runId": "ui-4-7myr",
+        "mode": "ui",
+        "task": "find_and_cart_product",
+        "completed": false,
+        "steps": 18,
+        "durationMs": 117443,
+        "failureCategory": "popup_interference",
+        "timestamp": "2026-08-31T15:55:07.184Z"
+      }
+    ]
+  }
+]

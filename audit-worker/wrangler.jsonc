@@ -1,0 +1,33 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "agentready-audit-worker",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": { "enabled": true },
+  "browser": { "binding": "BROWSER" },
+  "ai": { "binding": "AI" },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "agentready-telemetry",
+      // Same database as the main app — paste the same id:
+      "database_id": "00000000-0000-0000-0000-000000000002"
+    }
+  ],
+  "queues": {
+    "consumers": [
+      {
+        "queue": "agentready-audits",
+        // max_concurrency=1 keeps us safely inside Browser Run session limits;
+        // raise it as the plan allows. Retries cover transient browser errors.
+        "max_concurrency": 1,
+        "max_batch_size": 1,
+        "max_retries": 2,
+        "retry_delay": 30
+      }
+    ]
+  }
+  // Future: a Durable Object here for browser session pooling/reuse across
+  // jobs (see README). Not required — Queues concurrency covers the limits.
+}

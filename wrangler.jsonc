@@ -1,0 +1,30 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "agentready",
+  "compatibility_date": "2026-08-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": { "enabled": true },
+  "cache": { "enabled": true },
+  "version_metadata": { "binding": "CF_VERSION_METADATA" },
+  "images": { "binding": "IMAGES" },
+  "kv_namespaces": [
+    // npx wrangler kv namespace create VINEXT_KV_CACHE → paste the id:
+    { "binding": "VINEXT_KV_CACHE", "id": "00000000-0000-0000-0000-000000000001" }
+  ],
+  "queues": {
+    "producers": [
+      // npx wrangler queues create agentready-audits
+      { "binding": "AUDIT_QUEUE", "queue": "agentready-audits" }
+    ]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "agentready-telemetry",
+      // npx wrangler d1 create agentready-telemetry → paste the id:
+      "database_id": "00000000-0000-0000-0000-000000000002"
+    }
+  ]
+  // Post-hackathon: add an R2 bucket for runner screenshots/artifacts:
+  // "r2_buckets": [{ "binding": "ARTIFACTS", "bucket_name": "agentready-artifacts" }]
+}
