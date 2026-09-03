@@ -6,10 +6,10 @@
   "scripts": {
     "dev": "vinext dev",
     "build": "vinext build",
-    "preview": "vinext build && wrangler dev --config dist/client/wrangler.json",
-    "deploy": "vinext build && vinext-cloudflare deploy --config dist/client/wrangler.json",
+    "preview": "vinext build && wrangler dev --config dist/server/wrangler.json",
+    "deploy": "vinext build && vinext-cloudflare deploy --config dist/server/wrangler.json",
     "db:init": "wrangler d1 execute agentready-telemetry --remote --file=./schema.sql",
-    "db:init:local": "wrangler d1 execute agentready-telemetry --local --file=../../schema.sql --config dist/client/wrangler.json",
+    "db:init:local": "wrangler d1 execute agentready-telemetry --local --file=../../schema.sql --config dist/server/wrangler.json",
     "import-results": "node scripts/import-results.mjs"
   },
   "dependencies": {
