@@ -17,3 +17,7 @@ video/out/
 video/public/audio/
 video/tts/.venv/
 video/public/recordings/*.mp4
+video/public/broll/
+video/record/node_modules/
+video/record/*.webm
+video/record/tmp/

@@ -1,6 +1,6 @@
 import React from "react";
 import { AbsoluteFill, Audio, Sequence, staticFile } from "remotion";
-import { FPS, HAS_AUDIO, scenes } from "./scenes";
+import { FPS, HAS_AUDIO, INSERT_AUDIO, scenes } from "./scenes";
 import { SceneShell } from "./components/SceneShell";
 import { CloseCard } from "./components/CloseCard";
 import { HookCard } from "./components/HookCard";
@@ -28,6 +28,13 @@ export const AgentReadyDemo: React.FC = () => {
             {HAS_AUDIO ? (
               <Audio src={staticFile(`audio/${scene.id}.wav`)} />
             ) : null}
+            {HAS_AUDIO
+              ? (INSERT_AUDIO[scene.id] ?? []).map((ins) => (
+                  <Sequence key={ins.file} from={ins.at} name={ins.file}>
+                    <Audio src={staticFile(ins.file)} />
+                  </Sequence>
+                ))
+              : null}
           </Sequence>
         );
         from += durationInFrames;

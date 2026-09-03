@@ -1,0 +1,1164 @@
+
+================ HOME / ================
+{
+  "title": "AgentReady — readiness benchmark for the agent-native web",
+  "bodyHeight": 2083,
+  "sels": {
+    "headings": {
+      "sel": "h1, h2, h3",
+      "count": 3,
+      "samples": [
+        {
+          "tag": "h1",
+          "id": null,
+          "cls": null,
+          "text": "Can an AI agent actually use your website? We measured."
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "cls": null,
+          "text": "Readiness report"
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "cls": null,
+          "text": "Agent activity on this page"
+        }
+      ]
+    },
+    "tables": {
+      "sel": "table",
+      "count": 1,
+      "samples": [
+        {
+          "tag": "table",
+          "id": null,
+          "cls": "scoreboard",
+          "text": "SiteCategoryScoreAgent success (UI)Agent success (WebMCP)AgentReady Outfitters ("
+        }
+      ]
+    },
+    "tableRows": {
+      "sel": "table tbody tr",
+      "count": 15,
+      "samples": [
+        {
+          "tag": "tr",
+          "id": null,
+          "cls": null,
+          "text": "AgentReady Outfitters (live demo store) demo1000%100%detail"
+        },
+        {
+          "tag": "tr",
+          "id": null,
+          "cls": null,
+          "text": "Harbor & Page Books sample databooks10060%100%detail"
+        },
+        {
+          "tag": "tr",
+          "id": null,
+          "cls": null,
+          "text": "Tidepool Toys sample datatoys10040%100%detail"
+        },
+        {
+          "tag": "tr",
+          "id": null,
+          "cls": null,
+          "text": "Kiln & Oak Home sample datahome-goods9960%100%detail"
+        },
+        {
+          "tag": "tr",
+          "id": null,
+          "cls": null,
+          "text": "Loopset Fitness sample datafitness5560%no toolsdetail"
+        },
+        {
+          "tag": "tr",
+          "id": null,
+          "cls": null,
+          "text": "Stitchport Apparel sample datafashion5260%no toolsdetail"
+        },
+        {
+          "tag": "tr",
+          "id": null,
+          "cls": null,
+          "text": "Plumecraft Stationery sample datastationery5260%no toolsdetail"
+        },
+        {
+          "tag": "tr",
+          "id": null,
+          "cls": null,
+          "text": "Saffron Basket Foods sample datagrocery4860%no toolsdetail"
+        }
+      ]
+    },
+    "buttons": {
+      "sel": "button",
+      "count": 2,
+      "samples": [
+        {
+          "tag": "button",
+          "id": null,
+          "cls": null,
+          "text": "Copy report"
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "cls": null,
+          "text": "Clear"
+        }
+      ]
+    },
+    "links": {
+      "sel": "a[href]",
+      "count": 51,
+      "samples": [
+        {
+          "tag": "a",
+          "id": null,
+          "cls": "wordmark",
+          "text": "AgentReady"
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "cls": null,
+          "text": "Index"
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "cls": null,
+          "text": "Demo store"
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "cls": null,
+          "text": "Live agent traffic"
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "cls": null,
+          "text": "API check"
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "cls": "tick live",
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "cls": "tick mcp",
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "cls": "tick mcp",
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "cls": "tick mcp",
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "cls": "tick ",
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "cls": "tick ",
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "cls": "tick ",
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "cls": "tick ",
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "cls": "tick ",
+          "text": ""
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "cls": "tick ",
+          "text": ""
+        }
+      ]
+    },
+    "textareas": {
+      "sel": "textarea",
+      "count": 1,
+      "samples": [
+        {
+          "tag": "textarea",
+          "id": null,
+          "cls": "draft",
+          "text": ""
+        }
+      ]
+    },
+    "sections": {
+      "sel": "section",
+      "count": 4,
+      "samples": [
+        {
+          "tag": "section",
+          "id": null,
+          "cls": "hero",
+          "text": "Can an AI agent actually use your website? We measured.AgentReady runs real agen"
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "cls": "spectrum",
+          "text": "0255075100Every audited site, placed by readiness score. UI only exposes WebMCP "
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "cls": "panel",
+          "text": "Readiness reportAsk your agent to draft a report here (draft_readiness_report). "
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "cls": "panel",
+          "text": "Agent activity on this pageEvery WebMCP tool call is logged by the AgentReady SD"
+        }
+      ]
+    },
+    "feed": {
+      "sel": "[class*=\"feed\" i], [class*=\"activity\" i], [class*=\"log\" i]",
+      "count": 1,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "cls": "activity",
+          "text": "— no agent activity yet —"
+        }
+      ]
+    },
+    "spectrum": {
+      "sel": "[class*=\"spectrum\" i]",
+      "count": 2,
+      "samples": [
+        {
+          "tag": "section",
+          "id": null,
+          "cls": "spectrum",
+          "text": "0255075100Every audited site, placed by readiness score. UI only exposes WebMCP "
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "cls": "spectrum-caption",
+          "text": "Every audited site, placed by readiness score. UI only exposes WebMCP our live d"
+        }
+      ]
+    },
+    "scoreboard": {
+      "sel": "[class*=\"score\" i], [class*=\"board\" i], [class*=\"leader\" i]",
+      "count": 16,
+      "samples": [
+        {
+          "tag": "table",
+          "id": null,
+          "cls": "scoreboard",
+          "text": "SiteCategoryScoreAgent success (UI)Agent success (WebMCP)AgentReady Outfitters ("
+        },
+        {
+          "tag": "span",
+          "id": null,
+          "cls": "score-pill",
+          "text": "100"
+        },
+        {
+          "tag": "span",
+          "id": null,
+          "cls": "score-pill",
+          "text": "100"
+        },
+        {
+          "tag": "span",
+          "id": null,
+          "cls": "score-pill",
+          "text": "100"
+        },
+        {
+          "tag": "span",
+          "id": null,
+          "cls": "score-pill",
+          "text": "99"
+        },
+        {
+          "tag": "span",
+          "id": null,
+          "cls": "score-pill",
+          "text": "55"
+        },
+        {
+          "tag": "span",
+          "id": null,
+          "cls": "score-pill",
+          "text": "52"
+        },
+        {
+          "tag": "span",
+          "id": null,
+          "cls": "score-pill",
+          "text": "52"
+        }
+      ]
+    }
+  },
+  "tools": [
+    {
+      "name": "list_audited_sites",
+      "description": "List all sites in the AgentReady benchmark with their readiness score (0–100), category, and whether they expose WebMCP tools. Sorted by sco",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string",
+            "description": "Optional category filter, e.g. 'fashion'"
+          }
+        }
+      }
+    },
+    {
+      "name": "get_site_score",
+      "description": "Get the full readiness scorecard for one site: UI-mode vs WebMCP-mode agent success rates, average steps to complete the task, run count, an",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "site": {
+            "type": "string",
+            "description": "Site slug or name"
+          }
+        },
+        "required": [
+          "site"
+        ]
+      }
+    },
+    {
+      "name": "compare_sites",
+      "description": "Compare two sites head-to-head on readiness score, success rates, and efficiency. Returns a verdict on which is more agent-ready and why.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "siteA": {
+            "type": "string"
+          },
+          "siteB": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "siteA",
+          "siteB"
+        ]
+      }
+    },
+    {
+      "name": "get_failure_breakdown",
+      "description": "For a given site, return why agent runs failed there, by category (auth_wall, captcha, popup_interference, ambiguous_ui, navigation_loop, mi",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "site": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "site"
+        ]
+      }
+    },
+    {
+      "name": "queue_live_audit",
+      "description": "Queue a real serverless audit of a page on THIS deployment (external sites are rejected — they are audited with the local runner instead). T",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "description": "Path on this deployment — '/store' for the demo store. External URLs are rejected."
+          },
+          "slug": {
+            "type": "string",
+            "description": "Short identifier for the site, e.g. 'agentready-outfitters'"
+          },
+          "mode": {
+            "type": "string",
+            "enum": [
+              "webmcp",
+              "ui"
+            ],
+            "description": "Audit via WebMCP tools or raw UI. Default webmcp."
+          },
+          "runs": {
+            "type": "number",
+            "description": "1–5 runs. Default 1."
+          }
+        },
+        "required": [
+          "url",
+          "slug"
+        ]
+      }
+    },
+    {
+      "name": "get_live_audit_results",
+      "description": "Read results of serverless audits previously queued with queue_live_audit. Returns per-run completion, steps, duration, and failure category",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "slug": {
+            "type": "string",
+            "description": "Site slug used when queuing"
+          }
+        }
+      }
+    },
+    {
+      "name": "draft_readiness_report",
+      "description": "Write a draft readiness report into the report panel on this page, where the human analyst can see and edit it. Pass the full markdown text ",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "markdown": {
+            "type": "string",
+            "description": "Full report draft in markdown"
+          }
+        },
+        "required": [
+          "markdown"
+        ]
+      }
+    },
+    {
+      "name": "get_report_draft",
+      "description": "Read the current contents of the report panel, including any edits the human analyst has made since the last draft. Call this before revisin",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  ]
+}
+
+================ STORE /store ================
+{
+  "title": "AgentReady — readiness benchmark for the agent-native web",
+  "bodyHeight": 1336,
+  "sels": {
+    "headings": {
+      "sel": "h1, h2, h3",
+      "count": 11,
+      "samples": [
+        {
+          "tag": "h1",
+          "id": null,
+          "cls": null,
+          "text": "AgentReady Outfitters"
+        },
+        {
+          "tag": "h3",
+          "id": null,
+          "cls": null,
+          "text": "Trail Pack 28L"
+        },
+        {
+          "tag": "h3",
+          "id": null,
+          "cls": null,
+          "text": "Ridge Shell Jacket"
+        },
+        {
+          "tag": "h3",
+          "id": null,
+          "cls": null,
+          "text": "Ember Micro Stove"
+        },
+        {
+          "tag": "h3",
+          "id": null,
+          "cls": null,
+          "text": "Cirrus 2P Tent"
+        },
+        {
+          "tag": "h3",
+          "id": null,
+          "cls": null,
+          "text": "Switchback Headlamp"
+        },
+        {
+          "tag": "h3",
+          "id": null,
+          "cls": null,
+          "text": "Corvo Hiking Boots"
+        },
+        {
+          "tag": "h3",
+          "id": null,
+          "cls": null,
+          "text": "Stratus Bottle 1L"
+        },
+        {
+          "tag": "h3",
+          "id": null,
+          "cls": null,
+          "text": "Kestrel Trek Poles"
+        },
+        {
+          "tag": "h3",
+          "id": null,
+          "cls": null,
+          "text": "Cart"
+        }
+      ]
+    },
+    "buttons": {
+      "sel": "button",
+      "count": 8,
+      "samples": [
+        {
+          "tag": "button",
+          "id": null,
+          "cls": null,
+          "text": "Add to cart"
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "cls": null,
+          "text": "Add to cart"
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "cls": null,
+          "text": "Add to cart"
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "cls": null,
+          "text": "Add to cart"
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "cls": null,
+          "text": "Add to cart"
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "cls": null,
+          "text": "Add to cart"
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "cls": null,
+          "text": "Add to cart"
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "cls": null,
+          "text": "Add to cart"
+        }
+      ]
+    },
+    "links": {
+      "sel": "a[href]",
+      "count": 6,
+      "samples": [
+        {
+          "tag": "a",
+          "id": null,
+          "cls": "wordmark",
+          "text": "AgentReady"
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "cls": null,
+          "text": "Index"
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "cls": null,
+          "text": "Demo store"
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "cls": null,
+          "text": "Live agent traffic"
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "cls": null,
+          "text": "API check"
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "cls": null,
+          "text": "source (MIT)"
+        }
+      ]
+    },
+    "articles": {
+      "sel": "article",
+      "count": 8,
+      "samples": [
+        {
+          "tag": "article",
+          "id": null,
+          "cls": "product",
+          "text": "🎒Trail Pack 28Lpacks · 12 in stock₹3,499Add to cart"
+        },
+        {
+          "tag": "article",
+          "id": null,
+          "cls": "product",
+          "text": "🧥Ridge Shell Jacketapparel · 7 in stock₹5,999Add to cart"
+        },
+        {
+          "tag": "article",
+          "id": null,
+          "cls": "product",
+          "text": "🔥Ember Micro Stovecamp · 20 in stock₹1,899Add to cart"
+        },
+        {
+          "tag": "article",
+          "id": null,
+          "cls": "product",
+          "text": "⛺Cirrus 2P Tentcamp · 4 in stock₹12,499Add to cart"
+        },
+        {
+          "tag": "article",
+          "id": null,
+          "cls": "product",
+          "text": "🔦Switchback Headlampcamp · 31 in stock₹1,299Add to cart"
+        },
+        {
+          "tag": "article",
+          "id": null,
+          "cls": "product",
+          "text": "🥾Corvo Hiking Bootsfootwear · 9 in stock₹7,499Add to cart"
+        },
+        {
+          "tag": "article",
+          "id": null,
+          "cls": "product",
+          "text": "🥤Stratus Bottle 1Lcamp · 44 in stock₹899Add to cart"
+        },
+        {
+          "tag": "article",
+          "id": null,
+          "cls": "product",
+          "text": "🥢Kestrel Trek Polescamp · 15 in stock₹2,799Add to cart"
+        }
+      ]
+    },
+    "sections": {
+      "sel": "section",
+      "count": 3,
+      "samples": [
+        {
+          "tag": "section",
+          "id": null,
+          "cls": "hero",
+          "text": "AgentReady OutfittersA working store where you and your agent shop the same cart"
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "cls": "panel cartbox",
+          "text": "CartEmpty. You or your agent can fix that."
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "cls": "panel",
+          "text": "Agent activity— quiet so far —"
+        }
+      ]
+    },
+    "feed": {
+      "sel": "[class*=\"feed\" i], [class*=\"activity\" i], [class*=\"log\" i]",
+      "count": 1,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "cls": "activity",
+          "text": "— quiet so far —"
+        }
+      ]
+    },
+    "cart": {
+      "sel": "[class*=\"cart\" i]",
+      "count": 1,
+      "samples": [
+        {
+          "tag": "section",
+          "id": null,
+          "cls": "panel cartbox",
+          "text": "CartEmpty. You or your agent can fix that."
+        }
+      ]
+    },
+    "product": {
+      "sel": "[class*=\"product\" i]",
+      "count": 9,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "cls": "products",
+          "text": "🎒Trail Pack 28Lpacks · 12 in stock₹3,499Add to cart🧥Ridge Shell Jacketapparel "
+        },
+        {
+          "tag": "article",
+          "id": null,
+          "cls": "product",
+          "text": "🎒Trail Pack 28Lpacks · 12 in stock₹3,499Add to cart"
+        },
+        {
+          "tag": "article",
+          "id": null,
+          "cls": "product",
+          "text": "🧥Ridge Shell Jacketapparel · 7 in stock₹5,999Add to cart"
+        },
+        {
+          "tag": "article",
+          "id": null,
+          "cls": "product",
+          "text": "🔥Ember Micro Stovecamp · 20 in stock₹1,899Add to cart"
+        },
+        {
+          "tag": "article",
+          "id": null,
+          "cls": "product",
+          "text": "⛺Cirrus 2P Tentcamp · 4 in stock₹12,499Add to cart"
+        },
+        {
+          "tag": "article",
+          "id": null,
+          "cls": "product",
+          "text": "🔦Switchback Headlampcamp · 31 in stock₹1,299Add to cart"
+        },
+        {
+          "tag": "article",
+          "id": null,
+          "cls": "product",
+          "text": "🥾Corvo Hiking Bootsfootwear · 9 in stock₹7,499Add to cart"
+        },
+        {
+          "tag": "article",
+          "id": null,
+          "cls": "product",
+          "text": "🥤Stratus Bottle 1Lcamp · 44 in stock₹899Add to cart"
+        }
+      ]
+    }
+  },
+  "tools": [
+    {
+      "name": "search_products",
+      "description": "Search the AgentReady Outfitters catalog by keyword and/or category (packs, apparel, camp, footwear). Returns id, name, price in INR, and st",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "packs",
+              "apparel",
+              "camp",
+              "footwear"
+            ]
+          },
+          "maxPrice": {
+            "type": "number",
+            "description": "Only products at or below this price (INR)"
+          }
+        }
+      }
+    },
+    {
+      "name": "add_to_cart",
+      "description": "Add a product to the shopping cart by product id. The cart updates live on screen for the human shopper.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "productId": {
+            "type": "string"
+          },
+          "quantity": {
+            "type": "number",
+            "description": "Default 1"
+          }
+        },
+        "required": [
+          "productId"
+        ]
+      }
+    },
+    {
+      "name": "remove_from_cart",
+      "description": "Remove a product from the cart entirely by product id.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "productId": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "productId"
+        ]
+      }
+    },
+    {
+      "name": "view_cart",
+      "description": "Read the current cart contents and total — including anything the human shopper added by hand. Call this before changing the cart so you res",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "start_checkout",
+      "description": "Begin checkout for the current cart. This demo stops before any payment step — it returns an order summary for the human to confirm. Never c",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  ]
+}
+
+================ LIVE /live ================
+{
+  "title": "AgentReady — readiness benchmark for the agent-native web",
+  "bodyHeight": 1118,
+  "sels": {
+    "headings": {
+      "sel": "h1, h2, h3",
+      "count": 3,
+      "samples": [
+        {
+          "tag": "h1",
+          "id": null,
+          "cls": null,
+          "text": "Live agent traffic"
+        },
+        {
+          "tag": "h3",
+          "id": null,
+          "cls": null,
+          "text": "Calls by tool"
+        },
+        {
+          "tag": "h3",
+          "id": null,
+          "cls": null,
+          "text": "Event stream"
+        }
+      ]
+    },
+    "tables": {
+      "sel": "table",
+      "count": 1,
+      "samples": [
+        {
+          "tag": "table",
+          "id": null,
+          "cls": "scoreboard",
+          "text": "ToolCallsFailuresview_cart40add_to_cart30search_products30"
+        }
+      ]
+    },
+    "tableRows": {
+      "sel": "table tbody tr",
+      "count": 3,
+      "samples": [
+        {
+          "tag": "tr",
+          "id": null,
+          "cls": null,
+          "text": "view_cart40"
+        },
+        {
+          "tag": "tr",
+          "id": null,
+          "cls": null,
+          "text": "add_to_cart30"
+        },
+        {
+          "tag": "tr",
+          "id": null,
+          "cls": null,
+          "text": "search_products30"
+        }
+      ]
+    },
+    "links": {
+      "sel": "a[href]",
+      "count": 6,
+      "samples": [
+        {
+          "tag": "a",
+          "id": null,
+          "cls": "wordmark",
+          "text": "AgentReady"
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "cls": null,
+          "text": "Index"
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "cls": null,
+          "text": "Demo store"
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "cls": null,
+          "text": "Live agent traffic"
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "cls": null,
+          "text": "API check"
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "cls": null,
+          "text": "source (MIT)"
+        }
+      ]
+    },
+    "sections": {
+      "sel": "section",
+      "count": 3,
+      "samples": [
+        {
+          "tag": "section",
+          "id": null,
+          "cls": "hero",
+          "text": "Live agent trafficEvery WebMCP tool call on this deployment, captured by the Age"
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "cls": "panel",
+          "text": "Calls by toolToolCallsFailuresview_cart40add_to_cart30search_products30"
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "cls": "panel",
+          "text": "Event stream17:08:32  demo-store/view_cart  ok  0ms  {}\n17:08:31  demo-store/add"
+        }
+      ]
+    },
+    "feed": {
+      "sel": "[class*=\"feed\" i], [class*=\"activity\" i], [class*=\"log\" i]",
+      "count": 1,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "cls": "activity",
+          "text": "17:08:32  demo-store/view_cart  ok  0ms  {}\n17:08:31  demo-store/add_to_cart  ok"
+        }
+      ]
+    },
+    "scoreboard": {
+      "sel": "[class*=\"score\" i], [class*=\"board\" i], [class*=\"leader\" i]",
+      "count": 1,
+      "samples": [
+        {
+          "tag": "table",
+          "id": null,
+          "cls": "scoreboard",
+          "text": "ToolCallsFailuresview_cart40add_to_cart30search_products30"
+        }
+      ]
+    }
+  },
+  "tools": null
+}
+
+================ SITE DETAIL /site/agentready-outfitters ================
+{
+  "title": "AgentReady — readiness benchmark for the agent-native web",
+  "bodyHeight": 911,
+  "sels": {
+    "headings": {
+      "sel": "h1, h2, h3",
+      "count": 5,
+      "samples": [
+        {
+          "tag": "h1",
+          "id": null,
+          "cls": null,
+          "text": "AgentReady Outfitters (live demo store)"
+        },
+        {
+          "tag": "h3",
+          "id": null,
+          "cls": null,
+          "text": "Readiness score"
+        },
+        {
+          "tag": "h3",
+          "id": null,
+          "cls": null,
+          "text": "The WebMCP delta"
+        },
+        {
+          "tag": "h3",
+          "id": null,
+          "cls": null,
+          "text": "Why runs fail here"
+        },
+        {
+          "tag": "h3",
+          "id": null,
+          "cls": null,
+          "text": "Run log"
+        }
+      ]
+    },
+    "links": {
+      "sel": "a[href]",
+      "count": 7,
+      "samples": [
+        {
+          "tag": "a",
+          "id": null,
+          "cls": "wordmark",
+          "text": "AgentReady"
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "cls": null,
+          "text": "Index"
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "cls": null,
+          "text": "Demo store"
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "cls": null,
+          "text": "Live agent traffic"
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "cls": null,
+          "text": "API check"
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "cls": null,
+          "text": "← Readiness index"
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "cls": null,
+          "text": "source (MIT)"
+        }
+      ]
+    },
+    "sections": {
+      "sel": "section",
+      "count": 5,
+      "samples": [
+        {
+          "tag": "section",
+          "id": null,
+          "cls": "hero",
+          "text": "AgentReady Outfitters (live demo store)demo · 6 audit runs · task: find a produc"
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "cls": "panel",
+          "text": "Readiness score100/10070% task success · 15% WebMCP tool surface · 15% efficienc"
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "cls": "panel",
+          "text": "The WebMCP deltaAgent success via raw UI0% · avg — stepsAgent success via WebMCP"
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "cls": "panel",
+          "text": "Why runs fail heretimeout3 of 3"
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "cls": "panel",
+          "text": "Run logFAIL  ui     15 steps  51.6s  timeoutFAIL  ui     15 steps  52.9s  timeou"
+        }
+      ]
+    }
+  },
+  "tools": null
+}
