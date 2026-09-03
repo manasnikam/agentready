@@ -48,8 +48,12 @@ async function llm(env: Env, system: string, user: string): Promise<any> {
     ],
     max_tokens: 400,
     temperature: 0.2,
-  })) as { response?: string };
-  const content = res.response ?? "";
+  })) as { response?: unknown };
+  const raw = res.response ?? "";
+  // Workers AI models sometimes return an already-parsed object instead of a
+  // JSON string — accept both.
+  if (raw && typeof raw === "object") return raw;
+  const content = String(raw);
   try {
     return JSON.parse(content);
   } catch {

@@ -5,7 +5,7 @@
   "type": "module",
   "description": "Queue consumer that executes AgentReady audits serverlessly: Browser Run for the browser, Workers AI for the agent, D1 for results.",
   "scripts": {
-    "deploy": "wrangler deploy",
+    "deploy": "rm -rf ../.wrangler/deploy && wrangler deploy",
     "dry-run": "wrangler deploy --dry-run --outdir dist",
     "tail": "wrangler tail"
   },
