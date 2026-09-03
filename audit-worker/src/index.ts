@@ -89,9 +89,27 @@ interface RunResult {
 
 // ---------- UI mode ----------
 
+/**
+ * launch() failures must surface as recorded runs, not invocation errors:
+ * an uncaught throw burns the message's retries with nothing written to D1.
+ */
+async function launchOrRecord(env: Env, t0: number): Promise<{ browser?: Awaited<ReturnType<typeof launch>>; failure?: RunResult }> {
+  try {
+    return { browser: await launch(env.BROWSER) };
+  } catch (e) {
+    return {
+      failure: {
+        completed: false, steps: 0, durationMs: Date.now() - t0,
+        failureCategory: "tool_error", note: `browser launch failed: ${String(e).slice(0, 140)}`,
+      },
+    };
+  }
+}
+
 async function runUiMode(env: Env, job: AuditJob): Promise<RunResult> {
-  const browser = await launch(env.BROWSER);
   const t0 = Date.now();
+  const { browser, failure } = await launchOrRecord(env, t0);
+  if (!browser) return failure!;
   let steps = 0;
   const history: string[] = [];
   try {
@@ -159,8 +177,9 @@ async function runUiMode(env: Env, job: AuditJob): Promise<RunResult> {
 // ---------- WebMCP mode ----------
 
 async function runWebmcpMode(env: Env, job: AuditJob): Promise<RunResult> {
-  const browser = await launch(env.BROWSER);
   const t0 = Date.now();
+  const { browser, failure } = await launchOrRecord(env, t0);
+  if (!browser) return failure!;
   let steps = 0;
   try {
     const page = await browser.newPage();
