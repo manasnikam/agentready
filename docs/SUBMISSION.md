@@ -12,9 +12,9 @@ dashboard where their own agent queries the benchmark, diagnoses failures, and
 co-writes the readiness report with them in a shared editor.
 
 ## Why this use case is a strong fit for WebMCP
-AgentReady is WebMCP three times over: (1) it *measures* WebMCP's value — our
-demo store shows agents succeeding ~2.5× more often via tools than via the UI,
-with fewer steps; (2) the dashboard itself is an agent-native app — eight tools
+AgentReady is WebMCP three times over: (1) it *measures* WebMCP's value — in
+serverless audits of our own demo store, agents completed the task 3/3 times
+via WebMCP tools in ~4 steps, and 0/3 times through the raw UI (all timed out); (2) the dashboard itself is an agent-native app — eight tools
 let your agent analyze the benchmark alongside you; (3) our instrumentation SDK
 wraps registerTool so every agent call becomes analytics — the observability
 layer the agent-native web will need.

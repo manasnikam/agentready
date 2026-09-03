@@ -8,98 +8,61 @@
     "hasWebMCP": true,
     "runs": [
       {
-        "runId": "ui-0-40md",
+        "runId": "e6bdd410-779",
         "mode": "ui",
         "task": "find_and_cart_product",
         "completed": false,
-        "steps": 13,
-        "durationMs": 107940,
-        "failureCategory": "ambiguous_ui",
-        "timestamp": "2026-09-02T15:55:07.184Z"
+        "steps": 15,
+        "durationMs": 51644,
+        "failureCategory": "timeout",
+        "timestamp": "2026-09-03T17:47:39.610Z"
       },
       {
-        "runId": "ui-1-1sl",
-        "mode": "ui",
-        "task": "find_and_cart_product",
-        "completed": true,
-        "steps": 14,
-        "durationMs": 44800,
-        "timestamp": "2026-09-01T15:55:07.184Z"
-      },
-      {
-        "runId": "ui-2-hy9l",
+        "runId": "02832b6f-57e",
         "mode": "ui",
         "task": "find_and_cart_product",
         "completed": false,
-        "steps": 16,
-        "durationMs": 135200,
-        "failureCategory": "auth_wall",
-        "timestamp": "2026-09-01T15:55:07.184Z"
+        "steps": 15,
+        "durationMs": 52855,
+        "failureCategory": "timeout",
+        "timestamp": "2026-09-03T17:46:47.378Z"
       },
       {
-        "runId": "ui-3-g77u",
+        "runId": "45cc1d97-174",
         "mode": "ui",
         "task": "find_and_cart_product",
         "completed": false,
-        "steps": 18,
-        "durationMs": 128629,
-        "failureCategory": "missing_info",
-        "timestamp": "2026-08-28T15:55:07.184Z"
+        "steps": 15,
+        "durationMs": 36978,
+        "failureCategory": "timeout",
+        "timestamp": "2026-09-03T17:21:08.950Z"
       },
       {
-        "runId": "ui-4-hn4h",
-        "mode": "ui",
-        "task": "find_and_cart_product",
-        "completed": false,
-        "steps": 16,
-        "durationMs": 101002,
-        "failureCategory": "ambiguous_ui",
-        "timestamp": "2026-09-02T15:55:07.184Z"
-      },
-      {
-        "runId": "webmcp-0-3pvi",
-        "mode": "webmcp",
-        "task": "find_and_cart_product",
-        "completed": true,
-        "steps": 6,
-        "durationMs": 19200,
-        "timestamp": "2026-08-30T15:55:07.184Z"
-      },
-      {
-        "runId": "webmcp-1-494i",
-        "mode": "webmcp",
-        "task": "find_and_cart_product",
-        "completed": true,
-        "steps": 3,
-        "durationMs": 9600,
-        "timestamp": "2026-08-29T15:55:07.184Z"
-      },
-      {
-        "runId": "webmcp-2-f4ib",
+        "runId": "b56b47b6-2b6",
         "mode": "webmcp",
         "task": "find_and_cart_product",
         "completed": true,
         "steps": 5,
-        "durationMs": 16000,
-        "timestamp": "2026-09-02T15:55:07.184Z"
+        "durationMs": 6520,
+        "timestamp": "2026-09-03T17:08:34.028Z"
       },
       {
-        "runId": "webmcp-3-jf9b",
+        "runId": "3e9f6b1b-69e",
         "mode": "webmcp",
         "task": "find_and_cart_product",
         "completed": true,
-        "steps": 2,
-        "durationMs": 6400,
-        "timestamp": "2026-08-29T15:55:07.184Z"
+        "steps": 4,
+        "durationMs": 3857,
+        "timestamp": "2026-09-03T17:07:53.017Z"
       },
       {
-        "runId": "webmcp-4-im2i",
+        "runId": "7f432a15-2fc",
         "mode": "webmcp",
         "task": "find_and_cart_product",
         "completed": true,
-        "steps": 6,
-        "durationMs": 19200,
-        "timestamp": "2026-08-30T15:55:07.184Z"
+        "steps": 4,
+        "durationMs": 7392,
+        "timestamp": "2026-09-03T17:07:17.404Z"
       }
     ]
   },
