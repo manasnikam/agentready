@@ -66,10 +66,13 @@ export async function POST(req: NextRequest) {
     url: resolved.toString(),
     task: "find_and_cart_product",
     mode,
-    runs,
+    runs: 1,
   };
-  await env.AUDIT_QUEUE.send(job);
-  return NextResponse.json({ ok: true, queued: job });
+  // One queue message per run: a UI-mode run can take >10 minutes, so batching
+  // several into one consumer invocation risks the queue wall-clock limit
+  // killing the batch mid-way and retrying already-recorded runs.
+  for (let i = 0; i < runs; i++) await env.AUDIT_QUEUE.send(job);
+  return NextResponse.json({ ok: true, queued: { ...job, runs } });
 }
 
 /** GET ?slug= — read serverless audit results written by the audit worker. */
