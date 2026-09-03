@@ -10,3 +10,5 @@ dist/
 .wrangler/
 .omc/
 tsconfig.tsbuildinfo
+pnpm-lock.yaml
+pnpm-workspace.yaml
