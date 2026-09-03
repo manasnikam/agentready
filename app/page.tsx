@@ -127,11 +127,11 @@ export default function IndexPage() {
         {
           name: "queue_live_audit",
           description:
-            "Queue a real serverless audit of a site. The job runs on Cloudflare's platform (Browser Run browser + Workers AI agent) and results land in the benchmark database within a minute or two. Use the demo store path '/store' to audit this deployment's own reference store. Check back with get_live_audit_results.",
+            "Queue a real serverless audit of a page on THIS deployment (external sites are rejected — they are audited with the local runner instead). The job runs on Cloudflare's platform (Browser Run browser + Workers AI agent) and results land in the benchmark database within a minute or two. Use the demo store path '/store'. Check back with get_live_audit_results.",
           inputSchema: {
             type: "object",
             properties: {
-              url: { type: "string", description: "Absolute URL, or '/store' for this deployment's demo store" },
+              url: { type: "string", description: "Path on this deployment — '/store' for the demo store. External URLs are rejected." },
               slug: { type: "string", description: "Short identifier for the site, e.g. 'agentready-outfitters'" },
               mode: { type: "string", enum: ["webmcp", "ui"], description: "Audit via WebMCP tools or raw UI. Default webmcp." },
               runs: { type: "number", description: "1–5 runs. Default 1." },

@@ -88,6 +88,10 @@ export OPENAI_API_KEY=<api token with Workers AI permission>
 export RUNNER_MODEL=@cf/meta/llama-3.3-70b-instruct-fp8-fast
 ```
 
+## Security notes
+
+The deployment's public endpoints are deliberately unauthenticated so judges' agents can use them, with guardrails: `POST /api/audit` only accepts targets on the same deployment (external sites go through the local runner) and enforces a daily run budget; telemetry payloads are size-capped before hitting D1. The audit agent reads page content and tool descriptions, so a hostile *audited* page could try to steer it (prompt injection) — the same-origin restriction bounds serverless audits to this repo's own pages, and the local runner should only be pointed at sites you own or have permission to test.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).

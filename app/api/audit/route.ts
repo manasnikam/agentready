@@ -28,15 +28,45 @@ export async function POST(req: NextRequest) {
   if (!/^https?:\/\//.test(url) && !url.startsWith("/")) {
     return NextResponse.json({ error: "url must be absolute (or a path on this deployment)" }, { status: 400 });
   }
+  // This endpoint spends real Browser Run + Workers AI quota and is
+  // unauthenticated by design (judges' agents call it). Two guardrails:
+  // only this deployment may be audited, and total daily runs are capped.
+  let resolved: URL;
+  try {
+    resolved = new URL(url, req.nextUrl.origin);
+  } catch {
+    return NextResponse.json({ error: "invalid url" }, { status: 400 });
+  }
+  if (resolved.origin !== req.nextUrl.origin) {
+    return NextResponse.json(
+      { error: "live audits are restricted to this deployment — try '/store'. To audit external sites, use the local runner (runner/run.mjs)." },
+      { status: 403 }
+    );
+  }
+  const runs = Math.min(Math.max(Number(body?.runs) || 1, 1), 5);
+  if (env.DB) {
+    try {
+      const dayStart = new Date().toISOString().slice(0, 10);
+      const { results } = await env.DB
+        .prepare("SELECT COUNT(*) AS c FROM audit_runs WHERE ts >= ?")
+        .bind(dayStart)
+        .all<{ c: number }>();
+      if ((results[0]?.c ?? 0) + runs > 150) {
+        return NextResponse.json({ error: "daily audit budget reached — try again tomorrow" }, { status: 429 });
+      }
+    } catch {
+      /* table not created yet — first runs are within budget by definition */
+    }
+  }
   const mode = body?.mode === "ui" ? "ui" : "webmcp";
   const job = {
     jobId: crypto.randomUUID().slice(0, 12),
     slug: String(body?.slug ?? "adhoc").slice(0, 64).replace(/[^a-z0-9-]/gi, "-").toLowerCase(),
     name: String(body?.name ?? body?.slug ?? "Ad-hoc audit").slice(0, 120),
-    url: url.startsWith("/") ? new URL(url, req.nextUrl.origin).toString() : url,
+    url: resolved.toString(),
     task: "find_and_cart_product",
     mode,
-    runs: Math.min(Math.max(Number(body?.runs) || 1, 1), 5),
+    runs,
   };
   await env.AUDIT_QUEUE.send(job);
   return NextResponse.json({ ok: true, queued: job });
