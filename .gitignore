@@ -12,3 +12,8 @@ dist/
 tsconfig.tsbuildinfo
 pnpm-lock.yaml
 pnpm-workspace.yaml
+video/node_modules/
+video/out/
+video/public/audio/
+video/tts/.venv/
+video/public/recordings/*.mp4

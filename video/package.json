@@ -1,0 +1,22 @@
+{
+  "name": "agentready-video",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Remotion build for the AgentReady demo video",
+  "scripts": {
+    "dev": "remotion studio",
+    "render": "remotion render AgentReadyDemo out/agentready-demo.mp4",
+    "still": "remotion still AgentReadyDemo out/thumbnail.png --frame=30",
+    "audio": "tts/.venv/bin/python tts/generate_audio.py"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remotion": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19",
+    "typescript": "^5"
+  }
+}

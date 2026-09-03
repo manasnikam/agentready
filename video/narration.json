@@ -1,0 +1,34 @@
+{
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "The question nobody can answer",
+      "durationInSeconds": 20,
+      "narration": "Can an AI agent actually use your website? Almost no business can answer that question. AgentReady is the measuring instrument. We run real agents against real websites, and score every site, zero to one hundred, on whether agents can actually get things done."
+    },
+    {
+      "id": "benchmark",
+      "title": "One task, two modes",
+      "durationInSeconds": 30,
+      "narration": "Every site gets repeated agent runs through the raw user interface, and, where tools exist, through Web M C P. Same task, two modes. On our demo store the difference is stark: agents fumble through the UI, but succeed nearly every time through tools, in a third of the steps. That gap is the business case for the agent native web."
+    },
+    {
+      "id": "copilot",
+      "title": "Two authors, one document",
+      "durationInSeconds": 60,
+      "narration": "The dashboard itself is agent native. I ask my agent which sites are least ready, and why they fail. It queries the benchmark through Web M C P tools, and drafts a readiness report directly into the editor on the page. Now watch this. I edit one line by hand, then ask the agent to tighten the summary but keep my edits. Before revising, it calls get report draft, and reads my changes back. Two authors, one document. The agent can even queue a real audit. One tool call spins up a headless browser on Cloudflare's edge, a Workers AI agent completes the task, and the results land back in the benchmark, readable by the same agent that asked for them."
+    },
+    {
+      "id": "store",
+      "title": "A shared cart, fully observable",
+      "durationInSeconds": 40,
+      "narration": "In the demo store, my agent and I share one cart. I ask it to kit me out for a weekend trek under ten thousand rupees, and to check what's already in my cart first. It calls view cart, respects my choices, and adds the rest. Every one of those tool calls is instrumented. The live view streams each call, its latency, and its outcome. This is our S D K: any site gets agent analytics by wrapping register tool in one line."
+    },
+    {
+      "id": "close",
+      "title": "The web's most important new user",
+      "durationInSeconds": 30,
+      "narration": "AgentReady is three things: a benchmark, a reference implementation, and the analytics layer for the agent native web. Open methodology. MIT licensed. Built on Web M C P, and running entirely on Cloudflare. The web is about to get its most important new user. AgentReady measures whether it's ready."
+    }
+  ]
+}
