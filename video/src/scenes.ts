@@ -10,7 +10,7 @@ export const HEIGHT = 1080;
  *  - recordings: for each public/recordings/<id>.mp4 you capture
  * (Remotion fails the render on a missing staticFile, so presence is explicit.)
  */
-export const HAS_AUDIO = false;
+export const HAS_AUDIO = true;
 export const RECORDINGS: Record<string, boolean> = {
   hook: false,
   benchmark: false,
