@@ -12,7 +12,7 @@
       "binding": "DB",
       "database_name": "agentready-telemetry",
       // Same database as the main app — paste the same id:
-      "database_id": "00000000-0000-0000-0000-000000000002"
+      "database_id": "66fe5f89-31d3-46e4-b69a-f91b8143b730"
     }
   ],
   "queues": {

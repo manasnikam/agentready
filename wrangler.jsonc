@@ -9,7 +9,7 @@
   "images": { "binding": "IMAGES" },
   "kv_namespaces": [
     // npx wrangler kv namespace create VINEXT_KV_CACHE → paste the id:
-    { "binding": "VINEXT_KV_CACHE", "id": "00000000-0000-0000-0000-000000000001" }
+    { "binding": "VINEXT_KV_CACHE", "id": "dfcf20f5f0e14bec84d0e1146c4ab284" }
   ],
   "queues": {
     "producers": [
@@ -22,7 +22,7 @@
       "binding": "DB",
       "database_name": "agentready-telemetry",
       // npx wrangler d1 create agentready-telemetry → paste the id:
-      "database_id": "00000000-0000-0000-0000-000000000002"
+      "database_id": "66fe5f89-31d3-46e4-b69a-f91b8143b730"
     }
   ]
   // Post-hackathon: add an R2 bucket for runner screenshots/artifacts:
