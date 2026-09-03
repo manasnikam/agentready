@@ -9,3 +9,4 @@ dist/
 .vinext/
 .wrangler/
 .omc/
+tsconfig.tsbuildinfo
