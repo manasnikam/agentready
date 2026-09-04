@@ -47,4 +47,4 @@ Browser Run + Workers AI. Open methodology; MIT.
 ## Links
 - Live: https://agentready.prescalesystems.workers.dev
 - Repo: https://github.com/manasnikam/agentready (MIT license visible in About)
-- Video: <YOUTUBE URL>
+- Video: https://youtu.be/FuYCuj_4Tmw
