@@ -3,7 +3,12 @@
 ## Project name
 AgentReady — the readiness benchmark for the agent-native web
 
-## Elevator
+## Elevator (191 chars — Devpost limit is 200)
+Can an AI agent actually use your website? AgentReady runs real agents through
+your raw UI and your WebMCP tools, scores the site 0-100, and publishes the
+gap. Measured: UI 0/3 vs WebMCP 3/3.
+
+### Long version (for the description body)
 Nobody can answer the most basic question of the agent era: *can an AI agent
 actually use my website?* AgentReady measures it. We run real agents against
 real task flows — once through the raw UI, once through WebMCP tools — score
